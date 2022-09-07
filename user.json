@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "name": "Rahul Pandey",
+      "userName": "rahul$67",
+      "password": "r537@8989"
+    },
+    {
+      "userId": 2,
+      "name": "Ayush Singh",
+      "userName": "ayush$7",
+      "password": "a537@88754"
+    },
+    {
+      "userId": 3,
+      "name": "Raman goyal",
+      "userName": "raman@367",
+      "password": "r537#8989"
+    },
+    {
+      "userId": 4,
+      "name": "Rajesh sahu",
+      "userName": "rajesh67",
+      "password": "r@8989"
+    }
+  ]
+}

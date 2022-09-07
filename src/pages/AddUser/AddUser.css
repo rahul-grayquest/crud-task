@@ -1,0 +1,64 @@
+.form{
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  border: 2px solid #cecece;
+  margin-top:20px;
+  margin-bottom: 40px;
+  padding:0.9rem;
+  background-color: beige;
+}
+h3{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:600;
+  color:teal
+}
+.label1,.label2,.label3{
+  font: 1.1rem;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  color:orangered
+}
+.label1{
+  margin-right: 3rem;
+}
+.label2{
+  margin-right:1rem;
+}
+.label3{
+  margin-right:1.2rem;
+}
+
+.inptBox{
+  margin:auto;
+}
+.inptBox > div{
+  margin-bottom:0.6rem;
+}
+
+.ipt{
+  width:40%;
+  height:20%;
+  border: 2px solid #cecece;
+  border-radius: 0.2rem;
+  padding:0.4rem 3rem;
+  outline: none;
+}
+
+.submit{
+  padding: 0.4rem 2rem;
+  color:#fff;
+  background-color: green;
+  border-radius: 0.2rem;
+  width: 20%;
+  margin:auto;
+  margin-top:15px;
+  outline:none;
+  border:none;
+  font-size: 0.96rem;
+  cursor: pointer;
+}
