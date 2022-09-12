@@ -4,14 +4,15 @@ import axios from "axios"
 const initialState = {
     loading: false,
     error: null,
-    data: null,
+    data: [],
 };
 
 export const putEditUser = createAsyncThunk(
-    'putEditUser/Put',
-    async (body, {id},{ rejectWithValue }) => {
+    'putEditUser',
+    async ( id, body, { rejectWithValue }) => {
         try {
-            const response = await axios.put(`http://localhost:3004/users/${id}`, body);
+            const response = await axios.put(`http://localhost:3004/users/${id}`,body);
+            console.log(response)
             const data = response?.data;
             return data;
         } catch (err) {
@@ -34,7 +35,7 @@ const putEditUserSlice = createSlice({
         },
         [putEditUser.fulfilled]: (state, { payload }) => {
             state.loading = false;
-            state.data = payload?.data;
+            state.data = payload;
             state.error = null;
         },
         [putEditUser.rejected]: (state, { payload }) => {

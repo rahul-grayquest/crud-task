@@ -10,10 +10,11 @@ const initialState = {
 export const postAddUser = createAsyncThunk(
     'postAddUser',
     async (body, { rejectWithValue }) => {
+
         try {
+          
             const response = await axios.post("http://localhost:3004/users",body);
-            const data = response;
-            console.log(data)
+            const data = response?.data
             return data;
         } catch (err) {
             const errObj = {

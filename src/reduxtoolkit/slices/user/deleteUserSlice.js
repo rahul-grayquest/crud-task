@@ -12,8 +12,7 @@ export const deleteUser = createAsyncThunk(
     async ({id},{ rejectWithValue }) => {
         try {
             const response = await axios.delete(`http://localhost:3004/users/${id}`);
-            const data =  response
-            // console.log("delres",data)
+            const data =  response?.data
             return data;
         } catch (err) {
             const errObj = {
@@ -29,7 +28,7 @@ export const deleteUser = createAsyncThunk(
 const  deleteUserSlice = createSlice({
     name: 'deleteUser',
     initialState,
-    extraReducers: {
+    extraReducers:{
         [deleteUser.pending]: (state) => {
             state.loading = true;
         },

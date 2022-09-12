@@ -5,7 +5,7 @@ import {postAddUserReducer} from "../../slices/user/postAddUserSlice"
 
 export const userReducer = {
     deleteUser:deleteUserReducer,
-    putEditUser: putEditUserReducer,
+    putEditUser:putEditUserReducer,
     postAddUser:postAddUserReducer,
     getUser:getUserReducer
 };
