@@ -4,24 +4,20 @@ import axios from "axios"
 const initialState = {
     loading: false,
     error: null,
-    data: [],
+    data:[],
 };
 
 export const putEditUser = createAsyncThunk(
     'putEditUser',
-    async ( id, body, { rejectWithValue }) => {
+    async (body) => {
         try {
-            const response = await axios.put(`http://localhost:3004/users/${id}`,body);
-            console.log(response)
+            console.log("body:",body)
+            const response = await axios.put(`http://localhost:3004/users/${body.id}`,body);
+            console.log("res:",response)
             const data = response?.data;
             return data;
         } catch (err) {
-            const errObj = {
-                type: 'PUT_EDIT_USER_FAILURE',
-                error: err,
-                message: 'Oops! something went wrong',
-            };
-            return rejectWithValue(err?.response?.data || errObj);
+            console.log(err)
         }
     },
 );

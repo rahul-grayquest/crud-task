@@ -1,22 +1,16 @@
 {
   "users": [
     {
-      "Name": "ertert",
-      "Username": "ertert",
-      "password": "ertertre",
-      "id": 5
+      "Name": "rajesh",
+      "Username": "345345",
+      "password": "dsfwert",
+      "id": 2
     },
     {
-      "Name": "rahul",
-      "Username": "rat776",
-      "password": "tyut876786",
-      "id": 7
-    },
-    {
-      "Name": "rtrytr",
-      "Username": "fjyuy",
-      "password": "tyfy65756",
-      "id": 8
+      "Name": "darvesh",
+      "Username": "tytiuy",
+      "password": "345ertriuy097",
+      "id": 4
     }
   ]
 }
